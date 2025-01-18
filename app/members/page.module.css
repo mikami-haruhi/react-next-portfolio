@@ -47,29 +47,45 @@
     font-weight: bold;
   }
 
-.text{
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #DC9F95;
+    margin: 10px auto 0;
+  }
+
+  .text {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.list{
+.list {
     display: flex;
-    align-items: flex-start;
-    gap: 40px;
+    flex-direction: column;  /* 画像とテキストを縦並びに */
+    align-items: center;  /* 中央揃え */
+    gap: 20px;  /* 要素間のスペース */
     margin-bottom: 80px;
+    text-align: center;  /* すべてのテキストを中央揃えに */
 }
 
-.list:nth-child(even){
-    flex-direction: row-reverse;
-}
 
-.image{
+
+.image {
     width: 240px;
     height: auto;
     border-radius: var(--border-radius);
 }
 
-.name{
+.name {
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -78,11 +94,12 @@
     margin-bottom: 8px;
 }
 
-.profile{
+
+.profile {
     font-size: 0.9rem;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,11 +109,11 @@
     gap: 24px;
 }
 
-.massage{
+.massage {
     font-size: 2rem;
     font-weight: bold;
 }
 
-.empty{
+.empty {
     margin-bottom: 40px;
 }

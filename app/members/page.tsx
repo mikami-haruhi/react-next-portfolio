@@ -16,10 +16,12 @@ export default async function Page(){
     <p className={styles.skills}>現在学んでいる内容: Next.js, Pythonなど</p>
         </div>
 </section>
+
             {data.contents.length === 0 ? (
                 <p className={styles.empty}>メンバーが登録されていません。</p>
             ) : (
                 <ul>
+                     <h1 className={styles.title}>作品集</h1>
                     {data.contents.map((member) =>(
                         <li key={member.id} className={styles.list}>
                             <Image
