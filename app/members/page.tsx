@@ -6,7 +6,16 @@ import styles from "./page.module.css";
 export default async function Page(){
     const data = await getMembersList({ limit: MEMBERS_LIST_LIMIT });
     return(
+        
         <div className={styles.container}>
+            <section className={styles.about}>
+        <div className={styles.aboutTitle}>About Me</div>
+        <div className={styles.aboutText}>
+    <p className={styles.name}>三上 春陽</p>
+    <p className={styles.study}>京都デザイン＆テクノロジー専門学校で学んでいます。</p>
+    <p className={styles.skills}>現在学んでいる内容: Next.js, Pythonなど</p>
+        </div>
+</section>
             {data.contents.length === 0 ? (
                 <p className={styles.empty}>メンバーが登録されていません。</p>
             ) : (

@@ -15,6 +15,10 @@
 .logo{
     height: 24px;
     width: auto;
+    font-size: 1.5rem; /* ロゴのフォントサイズ */
+    font-weight: 700; /* 太字 */
+    color: var(--color-text-main); 
+    font-family: 'Arial', sans-serif; 
 }
 
 
