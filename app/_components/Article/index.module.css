@@ -1,8 +1,21 @@
 .title {
-    font-size: 2.4rem;
-    margin-bottom: 24px;
-    text-align: left;
-  }
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+  text-align: left;
+  position: relative; /* 擬似要素を位置調整可能にする */
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 100%; /* 親のテキスト幅に合わせる */
+  height: 3px;
+  background-color: #DC9F95;
+  margin: 10px 0 0; /* 上下の余白のみ調整 */
+  position: absolute;
+  left: 0; /* 左揃え */
+  bottom: -5px; /* タイトルから少し離す */
+}
   
   .description {
     font-size: 0.9rem;
