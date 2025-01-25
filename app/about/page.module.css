@@ -85,14 +85,21 @@
     border-radius: var(--border-radius);
 }
 
-.name {
+.workTitle {
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.position{
-    margin-bottom: 8px;
+.workTitle::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #DC9F95;
+  margin: 10px auto ;
 }
+
+
 
 
 .profile {

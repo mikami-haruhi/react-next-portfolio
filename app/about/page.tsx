@@ -32,7 +32,7 @@ export default async function Page(){
                             className={styles.image}
                             />
                             <dl>
-                                <dt className={styles.name}>{about.title}</dt>
+                                <dt className={styles.workTitle}>{about.title}</dt>
                                 <dd className={styles.profile}>{about.explanation}</dd>
                             </dl>
                         </li>
