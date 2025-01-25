@@ -1,10 +1,10 @@
 import Image from "next/image";
-import {getMembersList} from "@/app/_libs/microcms";
-import { MEMBERS_LIST_LIMIT } from "@/app/_constants";
+import {getAboutList} from "@/app/_libs/microcms";
+import { ABOUT_LIST_LIMIT } from "@/app/_constants";
 import styles from "./page.module.css";
 
 export default async function Page(){
-    const data = await getMembersList({ limit: MEMBERS_LIST_LIMIT });
+    const data = await getAboutList({ limit: ABOUT_LIST_LIMIT });
     return(
         
         <div className={styles.container}>
@@ -18,23 +18,22 @@ export default async function Page(){
 </section>
 
             {data.contents.length === 0 ? (
-                <p className={styles.empty}>メンバーが登録されていません。</p>
+                <p className={styles.empty}>作品がありません。</p>
             ) : (
                 <ul>
                      <h1 className={styles.title}>作品集</h1>
-                    {data.contents.map((member) =>(
-                        <li key={member.id} className={styles.list}>
+                    {data.contents.map((about) =>(
+                        <li key={about.id} className={styles.list}>
                             <Image
-                            src={member.image.url}
+                            src={about.image.url}
                             alt=""
-                            width={member.image.width}
-                            height={member.image.height}
+                            width={about.image.width}
+                            height={about.image.height}
                             className={styles.image}
                             />
                             <dl>
-                                <dt className={styles.name}>{member.name}</dt>
-                                <dd className={styles.position}>{member.position}</dd>
-                                <dd className={styles.profile}>{member.profile}</dd>
+                                <dt className={styles.name}>{about.title}</dt>
+                                <dd className={styles.profile}>{about.explanation}</dd>
                             </dl>
                         </li>
                     ))}

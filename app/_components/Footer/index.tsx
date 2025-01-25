@@ -7,14 +7,11 @@ export default function Footer() {
             <nav className={styles.nav}>
                 <ul className={styles.items}>
                     <li className={styles.item}>
-                        <Link href="/members" >About</Link>
+                        <Link href="/about" >About</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link href="/news">News</Link>
+                        <Link href="/news">Blog</Link>
                     </li>
-                    <li className={styles.item}>
-                        <Link href="/contact">お問い合わせ</Link>
-                        </li>
                 </ul>
             </nav>
             <p className="{styles.cr}">© Mikami. All Rights Reserved 2025</p>        
