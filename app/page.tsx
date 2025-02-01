@@ -39,10 +39,10 @@ export default async function Home(){
       </div>
       </section>
 
-    <section className={styles.news}>
-      <h2 className={styles.newsTitle}>Blog</h2>
+    <section className={styles.blog}>
+      <h2 className={styles.blogTitle}>Blog</h2>
       <BlogList blog={data.contents} />
-    <div className={styles.newsLink}>
+    <div className={styles.blogLink}>
     <ButtonLink href="/blog">もっとみる</ButtonLink>
     </div>
 

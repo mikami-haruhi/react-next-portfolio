@@ -145,7 +145,7 @@
 }
 
 
-.news {
+.blog {
   position: relative;
   background-color: #FFF6EE;
   width: 840px;
@@ -154,7 +154,7 @@
   border-radius: var(--border-radius);
 }
 
-.newsTitle {
+.blogTitle {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
@@ -172,7 +172,7 @@
   margin: 10px auto 0;
 }
 
-.newsLink {
+.blogLink {
   position: absolute;
   right: -40px;
   bottom: -40px;
@@ -221,12 +221,12 @@
     padding: 16px 24px;
   }
 
-  .news {
+  .blog {
     width: calc(100% - 32px);
     padding: 16px 24px;
   }
 
-  .newsLink {
+  .blogLink {
     position: relative;
     right: auto;
     bottom: auto;

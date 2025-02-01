@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import type  { Blog } from "@/app/_libs/microcms";
 import Date from "../Date";
